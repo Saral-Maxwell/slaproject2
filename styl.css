@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=popins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    font-family: 'popins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #23282c;
+    background-size: cover;
+}
+a{
+    position: relative;
+    background-image: url(mine.jpg);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding:10px 30px;
+    transition: 0.5s;
+}
+a:hover
+{
+    color: var(--clr);
+    letter-spacing: 0.28em;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+a:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #23282c;
+}
+a span{
+    position: relative;
+    z-index: 1;
+}
+a i{
+   position: absolute;
+   inset: 0;
+   display: block;
+}
+a i::before{
+    content: '';
+    top: -10px;
+    position: absolute;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #23282c;
+    transform: translate(-50%) skew(325deg);
+    transition: 0.5s;
+
+}
+a:hover i::before{
+    width: 20px;
+    left: 20px;
+
+}
+a i::after{
+    content: '';
+    bottom: -12px;
+    position: absolute;
+    right: 80%;
+    width: 10px;
+    height: 4px;
+    background: #23282c;
+    transform: translate(-50%) skew(325deg);
+    transition: 0.5s;
+
+}
+a:hover i::after{
+    width: 20px;
+    right: 20px;
+
+}

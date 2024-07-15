@@ -1,0 +1,21 @@
+h1{
+    color:red;
+    height:100px
+    width:fit-content;
+}
+h2{
+    background-color: aquamarine;
+    color:blueviolet;
+    height:100px;
+    display:flex;
+}
+.head{
+    color: red ;
+    font-family: "Cambria";
+    background-color: aquamarine;
+    height: 150px;
+}
+h3{
+    font-family: 'Courier New';
+    color:black;
+}
